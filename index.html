@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Konfigurator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="img/bmwlogo.png" width="100px">
+    <div class="container">
+        <h1>BMW Konfigurator</h1>
+    </div>
+</header>
+<main class="container">
+    <section class="configurator">
+        <div class="preview">
+            <img id="car-image" src="img/series3_white.jpg" alt="BMW" class="show">
+        </div>
+        <div class="options">
+            <div class="option-group">
+                <h2>Model</h2>
+                <div id="model" class="button-group">
+                    <button data-model="series3" data-price="0" class="active">BMW Seria 3</button>
+                    <button data-model="series5" data-price="40000">BMW Seria 5</button>
+                    <button data-model="series7" data-price="110000">BMW Seria 7</button>
+                </div>
+            </div>
+            <div class="option-group">
+                <h2>Silnik</h2>
+                <div id="engine" class="button-group"></div>
+            </div>
+            <div class="option-group">
+                <h2>Kolor</h2>
+                <div id="color" class="color-group">
+                    <div class="color-swatch white active" data-price="0" data-color="white"></div>
+                    <div class="color-swatch black" data-price="2000" data-color="black"></div>
+                    <div class="color-swatch blue" data-price="2500" data-color="blue"></div>
+                    <div class="color-swatch red" data-price="5000" data-color="red"></div>
+                </div>
+            </div>
+            <div class="option-group">
+                <h2>Dodatki</h2>
+                <div id="extras" class="extras-group">
+                    <label><input type="checkbox" data-price="5000"> iDrive Professional</label>
+                    <label><input type="checkbox" data-price="3000"> Pakiet sportowy M</label>
+                    <label><input type="checkbox" data-price="4500"> System audio Harman Kardon</label>
+                    <label><input type="checkbox" data-price="2500"> Asystent parkowania</label>
+                    <label><input type="checkbox" data-price="4000"> Reflektory Laserlight</label>
+                    <label><input type="checkbox" data-price="3500"> Tapicerka skórzana</label>
+                </div>
+            </div>
+            <div class="total">
+                Cena całkowita: <span id="total-price">150000</span> PLN
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>BMW Konfigurator - Solider1337</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
